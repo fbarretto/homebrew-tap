@@ -1,7 +1,7 @@
 class Charcoal < Formula
   desc "Stacked-PR CLI with Graphite-compatible commands (fork of danerwilliams/charcoal)"
   homepage "https://github.com/fbarretto/charcoal"
-  version "1.1.3"
+  version "1.1.4"
   license "AGPL-3.0-only"
 
   depends_on "gh"
@@ -9,17 +9,17 @@ class Charcoal < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/fbarretto/charcoal/releases/download/v1.1.3/ch-macos-arm64"
-      sha256 "e3a893c1b1dc47c6f2f5d460c5e8a6ba9b3b0fed1b60f72b9b1a656038460804"
+      url "https://github.com/fbarretto/charcoal/releases/download/v1.1.4/ch-macos-arm64"
+      sha256 "2497b4483613edcbca6533ac87aec8b47ff7b2bee664b6fb45ca635b2e2c7338"
     else
-      url "https://github.com/fbarretto/charcoal/releases/download/v1.1.3/ch-macos-x64"
-      sha256 "3a6edee8a13310cec5d1ae8519c61491e7ab8304426ebacf1368e71033f9251d"
+      url "https://github.com/fbarretto/charcoal/releases/download/v1.1.4/ch-macos-x64"
+      sha256 "b1032c2c690afd8650dd8a26e5a081de23b67c8568bfe355b92108be8eac58ee"
     end
   end
 
   on_linux do
-    url "https://github.com/fbarretto/charcoal/releases/download/v1.1.3/ch-linux"
-    sha256 "8e82b3b8bd5ac7896096e4d426499eabbb7d152e3e594006884db860416d0ca1"
+    url "https://github.com/fbarretto/charcoal/releases/download/v1.1.4/ch-linux"
+    sha256 "8853c5d3a012c848bcf3128ad502712be5b019b7280c28e2b56f02d38d8cf08b"
   end
 
   def install
